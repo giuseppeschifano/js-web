@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,46 +14,33 @@
     <!--Link to your stylesheet-->
     <link rel="stylesheet" href="style.css">
     
-    <title>Exercise 1.4 CALCULATE AGE</title>
+    <title>Exercise 1.2 A SIMPLE CALCULATOR</title>
 
 </head>
 <body>
     
-    <h1 class="text-center my-5"><i class="fas fa-cat"></i> CALCULATE AGE <i class="fas fa-cat"></i></h1>
+    <h1 class="text-center my-5"><i class="fas fa-cat"></i> A SIMPLE CALCULATOR <i class="fas fa-cat"></i></h1>
 
 
     <div class="container my-5 py-5 bg-white text-success">
 
         <!-- PLACE YOUR CONTENT HERE-->
 
-    <!-- <form id="myAge"> -->
 
-        <p>To calculate your age, enter your birthday DD / MM / YYYY:</p>
+        <p>Give 2 random numbers to do some calculation with:</p>
 
-        <input id="birthDay" type="number" value="0" maxlength="2" min="1" max="31">
-        <input id="birthMonth" type="number" value="0" maxlength="2" min="1" max="12">
-        <input id="birthYear" type="number" value="0" maxlength="4" min="1900" max="2019"><br><br>
-
-        <!-- <input type="button" onclick="myReset()" value="Reset form"> -->
+        
+        <input id="myNumber1" type="text" placeholder="0">
 
         <hr>
 
-        <button onclick="calcAge()">CALCULATE AGE</button>
-        <!-- <button onclick="reset()">RESET</button> -->
-
-    <!-- </form> -->
+        <button onclick="myFunctionCalc()">+ - * /</button>
         
+
         <hr>
        
-        <p>Your age is: </p>
-        <p id="result">yBirthDay</p>
+        <p id="result">RESULT...</p>
 
-        <!-- <p id="demoDG">huidigeD</p>
-        <p id="demoMD">huidigeM</p>
-        <p id="demoJR">huidigeY</p>
-        <p id="demoJR2">huidigeY</p> -->
-
-        <!-- <p id="result2">dagenfebr</p> -->
 
     </div>
 
@@ -65,8 +53,12 @@
     <!--Axios script-->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
+
     <!--Your script-->
+    
     <script src="script.js"></script>
+
+
 
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,22 +13,36 @@
     <!--Link to your stylesheet-->
     <link rel="stylesheet" href="style.css">
     
-    <title>Exercise ... : ...</title>
+    <title>Exercise 1.3 Super Vilain</title>
 
 </head>
 <body>
     
-    <h1 class="text-center my-5"><i class="fas fa-cat"></i> This is a template <i class="fas fa-cat"></i></h1>
+    <h1 class="text-center my-5"><i class="fas fa-cat"></i> Super Vilain <i class="fas fa-cat"></i></h1>
 
 
     <div class="container my-5 py-5 bg-white text-success">
 
-        
-
-
         <!-- PLACE YOUR CONTENT HERE-->
 
+        
 
+        <form id="myVilain">
+
+            <h3>Dear Mr Super Vilain, pliz fill out this identity form:</h3>
+            <br>
+
+            Your Name _ _ _ _ <input id="name" type="text" name="yName" value=""><br><br>
+            Your Powers _ _ _ _ <input id="powers" type="text" name="yPowers" value=""><br><br>
+            Your Motivs _ _ _ _ <input id="motivation" type="text" name="yMotivation" value=""><br><br>
+            Your Plans _ _ _ _ _ <input id="plan" type="text" name="yPlan" value=""><br><br>
+            <hr>
+            <button onclick="Reset()">RESET</button>
+            <button onclick="Results()">DISPLAY</button><hr>
+
+            <p>To reset: click the RESET button /// To display: click the DISPLAY button</p>
+
+        </form>
 
 
     </div>
