@@ -1,1 +1,16 @@
-/*Use the .scss file instead!*/
+.col-md-12 {
+  height: 100vh;
+  position: relative;
+}
+
+.btn {
+  position: absolute;
+  width: 200px;
+  font-weight: bolder;
+  border-color: orange;
+  font-size: 22px;
+  color: orange;
+  background-image: url("manga.JPG");
+}
+
+/*# sourceMappingURL=style.css.map */
