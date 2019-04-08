@@ -18,81 +18,72 @@
 </head>
 <body>
     
-  <h1 class="text-center my-5"><i class="fas fa-cat"></i> CHARACTERS <i class="fas fa-cat"></i></h1>
+      <h1 class="text-center my-5"><i class="fas fa-cat"></i> CHARACTERS <i class="fas fa-cat"></i></h1>
 
-          <!-- *********** -->
+      <!-- *********** -->
+      <!-- Trigger the modal with a button -->
 
-          <!-- Trigger the modal with a button -->
+      <button type="button" id="myCreateBtn" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myCreateModal"> Create Character</button>
 
-          <button type="button" id="myCreateBtn" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myCreateModal"> Create Character</button>
+      <!-- Modal -->
 
-          <!-- Modal -->
+      <div class="modal fade" id="myCreateModal" tabindex="-1" role="dialog">
 
-          <div class="modal fade" id="myCreateModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg">
+        
+          <!-- Modal content-->
 
-            <div class="modal-dialog modal-lg">
-            
-              <!-- Modal content-->
+          <div class="modal-content" id="myCreateModalContent">
 
-              <div class="modal-content" id="myCreateModalContent">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title"> Create Character </h4>
+            </div>
 
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title"> Create Character </h4>
-                </div>
+            <div class="modal-body">
 
-                <div class="modal-body">
+              <!-- <p>Some text in the modal.</p> -->
 
-                  <!-- <p>Some text in the modal.</p> -->
+              <form id="newCharRecord" enctype="multipart/form-data" method="post" name="newRecords">
 
-                  <form id="newCharRecord" enctype="multipart/form-data" method="post" name="newRecords">
-
-                    <label>Name : </label>
-                    <input id="char_name" type="text" name="name" size="70" maxlength="100" /><br/><br/>
-
-                    <label>Short Description :</label>
-                    <input id="char_short_dsc" type="text" name="shortdsc" size="70" maxlength="150" /><br/><br/>
-
-                    <label>Long Description :</label>
-                    <input id="char_long_dsc" type="text" name="longdsc" size="70" maxlength="300" /><br/><br/>
-
-                    <label>Image :</label>
-                    <input id="char_image" type="text" name="image" size="70" maxlength="50000" /><br/><br/>
-
-                    
-                    <button onclick="sendXYZ()" type="button" class="btn btn-success" >Send</button>
-
-                          <!-- data-dismiss="modal" =  sluit form af !! niet nodig bij SEND !!-->
-
-                    <button onclick="resetXYZ()" type="button" class="btn btn-warning" data-dismiss="modal" value="Reset form">RESET FIELDS</button>
-                    <br><br>
-
-
-                  </form>
-                </div>
-
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <label>Name : </label>
+                <input id="char_name" type="text" name="name" size="70" maxlength="100" /><br/><br/>
                   
-                </div>
-              </div>
+                <label>Short Description :</label>
+                <input id="char_short_dsc" type="text" name="shortdsc" size="70" maxlength="150" /><br/><br/>
+
+                <label>Long Description :</label>
+                <input id="char_long_dsc" type="text" name="longdsc" size="70" maxlength="300" /><br/><br/>
+
+                <label>Image :</label>
+                <input id="char_image" type="text" name="image" size="70" maxlength="50000" /><br/><br/>
+
+                
+                <button onclick="sendXYZ()" type="button" class="btn btn-success" >Send</button>
+                  <!-- data-dismiss="modal" =  sluit form af !! niet nodig bij SEND !!-->
+
+                <button onclick="resetXYZ()" type="button" class="btn btn-warning" data-dismiss="modal" value="Reset form">RESET FIELDS</button>
+                <br><br>
+
+              </form>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+              
+            </div>
           </div>
         </div>
-
-           <!-- *********** -->
-
-
-    <div class="container my-5 py-5 bg-white text-success">
-
-        <!-- PLACE YOUR CONTENT HERE-->
-
-        <div id="row1" class="row d-flex justify-content-around"></div>
+      </div>
 
 
-    </div>
+      <div class="container my-5 py-5 bg-white text-success">
+          <div id="row1" class="row d-flex justify-content-around"></div>
+      </div>
         
 
     <!--Bootstrap & Jquery scripts-->
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
